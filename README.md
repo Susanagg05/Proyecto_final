@@ -1,9 +1,9 @@
 # Proyecto final de logica de programación
 
-##Descripción
+## Descripción
 Este es el proyecto final de lógica de programación
 
-##Integrantes
+## Integrantes
 - Susana Gutierrez
 - Mariana Gomez
 
