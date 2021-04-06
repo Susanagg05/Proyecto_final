@@ -2,11 +2,11 @@
 
 - Qué hemos hecho?
 
--Respuesta
+Respuesta
 
 - Qué voy a hacer?
 
--Respuesta
+Respuesta
 
 - Qué dificultades tengo?
 
