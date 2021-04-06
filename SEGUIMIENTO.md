@@ -9,7 +9,7 @@ Desde hace 2 semanas, creamos el respositorio y lo pusimos a prueba con los coma
 - Qué voy a hacer?
 
 Respuesta: (Susana y Mariana) 
-Debemos agregar más commits
+Debemos agregar más commits e ir actualizando el seguimiento 
 
 - Qué dificultades tengo?
 
