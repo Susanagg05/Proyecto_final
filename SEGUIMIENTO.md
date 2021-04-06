@@ -2,13 +2,13 @@
 
 - Qué hemos hecho?
 
-Respuesta: (Susana)
+Respuesta: (Susana y Mariana)
 Desde hace 2 semanas, creamos el respositorio y lo pusimos a prueba con los comandos correspondientes. Además hoy lo volvimos a probar montando un aerchivo .java
 
 
 - Qué voy a hacer?
 
-Respuesta: (Susana) 
+Respuesta: (Susana y Mariana) 
 Debemos agregar más commits
 
 - Qué dificultades tengo?
