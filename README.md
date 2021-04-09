@@ -7,4 +7,7 @@ Este es el proyecto final de lógica de programación
 - Susana Gutierrez
 - Mariana Gomez
 
+## Imagen
+![Arte minimalista](https://github.com/Susanagg05/Proyecto_final.git)
+
 ## Referencias
