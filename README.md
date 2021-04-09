@@ -8,6 +8,6 @@ Este es el proyecto final de lógica de programación
 - Mariana Gomez
 
 ## Imagen
-![Arte minimalista](https://github.com/Susanagg05/Proyecto_final.git)
+![Arte minimalista](https://co.pinterest.com/pin/5699937018100153/)
 
 ## Referencias
