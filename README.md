@@ -1,7 +1,7 @@
 # Proyecto final de logica de programación
 
 ## Descripción
-Este es el proyecto final de lógica de programación. Para este proyecto decidimos realizar una rocola que reproduzca las canciones propuestas por nuestros compañeros de manera ordenada, es decir, que se puedan reproducir cronologicamente segun su año de lanzamiento. 
+Este es el proyecto final de lógica de programación. Para este proyecto decidimos realizar un juego interactivo llamado GUESS THE SONG que reproduzca algunas canciones propuestas por nuestros compañeros de diversas formas, de manera que el usuario pueda adivinar las canciones de diversas formas. 
 
 ## Integrantes
 - Susana Gutierrez
