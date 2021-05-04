@@ -56,7 +56,7 @@ Respuesta: (Susana y Mariana) Volvimos a plantear la idea de nuestro proyecto pu
 
 Respuesta : (Susana y Mariana) Comenzaremos la interfaz grafica y el codigo del programa
 
-¿Que diicultades tenemos? 
+¿Que dificultades tenemos? 
 
 Respuesta: (Susana y Mariana) La dificultad que tenemos en este momento es la construccion de un codigo que se adapte a nuestra idea, por otro lado, el tiempo tambien es un factor importante ya que debemos tener el entregable listo para la otra semana.
 
