@@ -50,7 +50,7 @@ Respuesta: (Susana y Mariana) Aún no teníamos actualizado el fork del reposito
 
 -¿Que hemos hecho?
 
-Respuesta: (Susana y Mariana) Volvimos a plantear la idea de nuestro proyecto puesto que consideramos la posibilidad de que con la idea anterior nos podiamos ver afectadas en cuestion de tiempo ya que la rocola invlucraba las actualizaciones de todas las canciones y el tiempo de entrega de nuestros compañeros
+Respuesta: (Susana y Mariana) Volvimos a plantear la idea de nuestro proyecto puesto que consideramos la posibilidad de que con la idea anterior nos podiamos ver afectadas en cuestion de tiempo ya que la rocola involucraba las actualizaciones de todas las canciones y el tiempo de entrega de nuestros compañeros
 
 -¿Que voy a hacer? 
 
