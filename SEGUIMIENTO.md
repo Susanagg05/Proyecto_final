@@ -46,3 +46,18 @@ Respuesta: (Susana y Mariana) Empezar el porgrama de la rocola y pasar los archi
 
 Respuesta: (Susana y Mariana) Aún no teníamos actualizado el fork del repositorio general y por ende no nos aparecía el pull request, aún debemos aprendernos más comandos para facilitar el proceso del uso del repositorio
 
+## 4 de mayo 
+
+-¿Que hemos hecho?
+
+Respuesta: (Susana y Mariana) Volvimos a plantear la idea de nuestro proyecto puesto que consideramos la posibilidad de que con la idea anterior nos podiamos ver afectadas en cuestion de tiempo ya que la rocola invlucraba las actualizaciones de todas las canciones y el tiempo de entrega de nuestros compañeros
+
+-¿Que voy a hacer? 
+
+Respuesta : (Susana y Mariana) Comenzaremos la interfaz grafica y el codigo del programa
+
+¿Que diicultades tenemos? 
+
+Respuesta: (Susana y Mariana) La dificultad que tenemos en este momento es la construccion de un codigo que se adapte a nuestra idea, por otro lado, el tiempo tambien es un factor importante ya que debemos tener el entregable listo para la otra semana.
+
+
