@@ -1,6 +1,7 @@
 import org.fusesource.jansi.AnsiConsole;
 import static org.fusesource.jansi.Ansi.*;
 import static org.fusesource.jansi.Ansi.Color.*;
+import java.util.Random;
 
 public class Programa{
 	public static void main(String[] args) {
@@ -12,7 +13,8 @@ public class Programa{
 		AnsiConsole.systemInstall();
     	Audio audio = new Audio();
     	int centinela = 0;
-
+		Random rand = new Random();
+		int randomcancion;
     	String [] canciones = ConsoleFile.read ("recursos/letras.csv");
     	String [][] info_canciones = ConsoleData.dataList(canciones);
 	
@@ -24,10 +26,14 @@ public class Programa{
     	System.out.println("4. Salir del juego");
     	centinela = ConsoleInput.getInt();
 
-    	if (centinela == 1)
-    	{
-    		audio.seleccionarCancion(info_canciones[1][ConsoleData.RUTA_CANCION]);
+    	if (centinela ==1)
+    	{ randomcancion = rand.nextInt(14)+1;
+			System.out.println("El numero aleatoreo es:" + randomcancion);
+    		audio.seleccionarCancion(info_canciones[randomcancion][ConsoleData.RUTA_CANCION]);
     		audio.reproducir();
+			
     	}
+
+		
 	}
 }
