@@ -20,7 +20,7 @@ public class Programa{
 	
 	
 		System.out.println("¡Hola! Bienvenido a GuessTheSong, estas son las opciones de juego:");
-    	System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleaotrea, intenta adivinar cual y gigita su nombre");
+    	System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleaotrea, intenta adivinar cual es y digita su nombre");
     	System.out.println("2. En caso de apoyo, presione 2 para ver un fragmento de la letra, en caso de adivinar la canción ingrese su nombre");
     	System.out.println("3. Imprima las letras de las canciones");
     	System.out.println("4. Salir del juego");
