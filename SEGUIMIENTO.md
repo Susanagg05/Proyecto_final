@@ -61,3 +61,19 @@ Respuesta : (Susana y Mariana) Comenzaremos la interfaz grafica y el codigo del 
 Respuesta: (Susana y Mariana) La dificultad que tenemos en este momento es la construccion de un codigo que se adapte a nuestra idea, por otro lado, el tiempo tambien es un factor importante ya que debemos tener el entregable listo para la otra semana.
 
 
+## 10 de mayo 
+
+-¿Que he hecho?
+
+Respuesta: (Susana y Mariana) Comenzamos la construccion del codigo para que en primer lugar se imprima la interfaz grafica y el menu, tambien conseguimos
+que sonara una cancion aleatoria corrigiendo el archivo csv que contenia las letras y que se imprimiera un fragmento de las canciones. 
+
+-¿Que voy a hacer?
+
+Respuesta: (Susana y Mariana) Debemos completar el codigo para que se reproduzca una parte de la cancion.
+
+
+¿Que dificultades he tenido? 
+
+Respuesta:(Susana y Mariana) La construccion del codigo en general, puesto que se requieren conocimientos que no teniamos y recursos de programacion que no vimos en el curso
+por ende ha sido un trabajo muy autonomo y complejo, hemos tenido que recurriR a personas externas y fuentes diversas para lograr entender que debiamos hacer, por otro lado, el tiempo de entrega es muy reducido y no ha sido posible agendar espacio de asesoria con el profesor.
