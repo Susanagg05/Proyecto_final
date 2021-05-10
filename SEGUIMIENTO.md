@@ -76,4 +76,4 @@ Respuesta: (Susana y Mariana) Debemos completar el codigo para que se reproduzca
 ¿Que dificultades he tenido? 
 
 Respuesta:(Susana y Mariana) La construccion del codigo en general, puesto que se requieren conocimientos que no teniamos y recursos de programacion que no vimos en el curso
-por ende ha sido un trabajo muy autonomo y complejo, hemos tenido que recurriR a personas externas y fuentes diversas para lograr entender que debiamos hacer, por otro lado, el tiempo de entrega es muy reducido y no ha sido posible agendar espacio de asesoria con el profesor.
+por ende ha sido un trabajo muy autonomo y complejo, hemos tenido que recurrir a personas externas y fuentes diversas para lograr entender que debiamos hacer, por otro lado, el tiempo de entrega es muy reducido y no ha sido posible agendar espacio de asesoria con el profesor.
