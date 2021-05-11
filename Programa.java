@@ -66,8 +66,14 @@ public class Programa{
 		System.out.println(" / __) )( (  __) ___) ___|_  _) )( (  __) ___)/  \\(  ( \\/ __) ");
 		System.out.println("( (_ ) \\/ () _)\\___ \\___ \\ )( ) __ () _)\\___ (  O )    ( (_ \\ ");
 		System.out.println(" \\___|____(____|____(____/(__)\\_)(_(____|____/\\__/\\_)__)\\___/ " );
-
-		AnsiConsole.systemInstall();
+        System.out.println("                        ======o     o====== " );
+        System.out.println("                            ___________      " );
+        System.out.println("                           |___________|     " );
+        System.out.println("                            | \\ /\\ /\\ |       ");
+        System.out.println("                            | _\\/__\\/_|       ");
+        System.out.println("                           |___________|      ");
+		
+        AnsiConsole.systemInstall();
     	Audio audio = new Audio();
         Random randomGenerator = new Random ();
     	int centinela = 0;
