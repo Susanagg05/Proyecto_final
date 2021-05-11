@@ -86,19 +86,19 @@ public class Programa{
         //    System.out.println(" ");
         //}
         
-
+        System.out.println(info_canciones.length);
         System.out.println("¡Hola! Bienvenido a GuessTheSong, estas son las opciones de juego:");
-        System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre.");
-        System.out.println("2. Detener cancion.");
-        System.out.println("3. En caso de apoyo, presione 2 para ver un fragmento de la letra, en caso de adivinar la cancion ingrese su nombre.");
-        System.out.println("3. Imprima las letras de las canciones.");
-        System.out.println("4. Salir del juego.");
+        System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre");
+        System.out.println("2. Detener cancion");
+        System.out.println("3. En caso de apoyo, presione 2 para ver un fragmento de la letra, en caso de adivinar la canción ingrese su nombre");
+        System.out.println("3. Imprima las letras de las canciones");
+        System.out.println("4. Salir del juego");
         centinela = ConsoleInput.getInt();
 	do {
 
     	if (centinela ==1)
     	{ 
-            randomcancion = rand.nextInt(14)+1;
+            randomcancion = rand.nextInt(13)+1;
 			System.out.println("El numero aleatorio es:" + randomcancion);
             audio.seleccionarCancion(info_canciones[randomcancion][ConsoleData.RUTA_CANCION]);
     		audio.reproducir();	
@@ -120,11 +120,11 @@ public class Programa{
 
 
         System.out.println("¡Hola! Bienvenido a GuessTheSong, estas son las opciones de juego:");
-        System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre.");
-        System.out.println("2. Detener cancion.");
-        System.out.println("3. En caso de apoyo, presione 2 para ver un fragmento de la letra, en caso de adivinar la cancion ingrese su nombre.");
-        System.out.println("3. Imprima las letras de las canciones.");
-        System.out.println("4. Salir del juego.");
+        System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre");
+        System.out.println("2. Detener cancion");
+        System.out.println("3. En caso de apoyo, presione 2 para ver un fragmento de la letra, en caso de adivinar la canción ingrese su nombre");
+        System.out.println("3. Imprima las letras de las canciones");
+        System.out.println("4. Salir del juego");
         centinela = ConsoleInput.getInt();		
     }while(centinela!=4);
 }

@@ -12,12 +12,13 @@ public class Audio extends Thread{
 	private String sonido;	
 	private Sequencer sequencer;
 	private boolean esta_reproduciendose;
-	
+	private long tiempo;
+
 	public void seleccionarCancion(String ruta_cancion){
 		sonido = ruta_cancion;
 	}
 
-	public void empezar()
+	public void empezar(int posicion)
 	{
 		if(!esta_reproduciendose)
 		{
@@ -32,13 +33,17 @@ public class Audio extends Thread{
 	            // Create sequence, the File must contain MIDI file data.
 	            Sequence sequence = MidiSystem.getSequence(new File(sonido));
 	            sequencer.setSequence(sequence); // load it into sequencer
+	            if(posicion>0)
+	            {
+	            	sequencer.setTickPosition(posicion);
+	            }
 	            sequencer.start();  // start the playback
 	            esta_reproduciendose = true;
 
 	        } catch (MidiUnavailableException | InvalidMidiDataException | IOException ex) {
 	            //ex.printStackTrace();
 	            System.out.println("Error al reproducir el archivo, revise la ruta y vuelva a intentarlo.");
-	            esta_reproduciendose = true;
+	            esta_reproduciendose = false;
 	        }
 		}
 		else{
@@ -59,8 +64,8 @@ public class Audio extends Thread{
     	esta_reproduciendose = false;
 	}
 
-	public void reproducir(){
-		empezar();
+	public void empezarHilo()
+	{
 		if(!esta_reproduciendose)
 		{
 			this.start();
@@ -68,10 +73,20 @@ public class Audio extends Thread{
 		//System.out.println(this.getState());
 	}
 
+	public void reproducir(){
+		empezar(0);
+		empezarHilo();
+	}
+
+	public void fragmentoAleatorio(){
+		empezar(RandomHelper.random(0,(int)sequencer.getTickLength()));
+		empezarHilo();
+	}
+
 	public void run(){
 
+		//System.out.println(esta_reproduciendose);
 		while(esta_reproduciendose){
-			//System.out.println(esta_reproduciendose);
 			if(sequencer != null)
 			{
 				if(!sequencer.isRunning())
@@ -80,6 +95,11 @@ public class Audio extends Thread{
 					detener();
 					//System.out.print(sequencer.getTickPosition()+"/"+sequencer.getTickLength());
 					//System.out.print("\r");
+				}
+				else
+				{
+					System.out.println("posicion "+sequencer.getTickPosition());
+					System.out.println("longitud "+sequencer.getTickLength());
 				}
 			}
 		}
