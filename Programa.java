@@ -62,10 +62,11 @@ public class Programa{
     }
 
 	public static void main(String[] args) {
-		System.out.println("  ___ _  _ ____ ____ ____ ____ _  _ ____ ____  __  __ _  ___                    ");
-		System.out.println(" / __) )( (  __) ___) ___|_  _) )( (  __) ___)/  \\(  ( \\/ __)                 ");
-		System.out.println("( (_ ) \\/ () _)\\___ \\___ \\ )( ) __ () _)\\___ (  O )    ( (_ \\             ");
-		System.out.println(" \\___|____(____|____(____/(__)\\_)(_(____|____/\\__/\\_)__)\\___/              ");
+		System.out.println("  ___ _  _ ____ ____ ____ ____ _  _ ____ ____  __  __ _  ___   ");
+		System.out.println(" / __) )( (  __) ___) ___|_  _) )( (  __) ___)/  \\(  ( \\/ __) ");
+		System.out.println("( (_ ) \\/ () _)\\___ \\___ \\ )( ) __ () _)\\___ (  O )    ( (_ \\ ");
+		System.out.println(" \\___|____(____|____(____/(__)\\_)(_(____|____/\\__/\\_)__)\\___/ " );
+
         System.out.println("  ,           ;            ======o     o======      ,              ;            ");
         System.out.println("  ;;          ;;               ___________          ;;             ;;           ");
         System.out.println("  ;;          ;';.            |___________|         ;;             ;';.         ");
@@ -78,8 +79,8 @@ public class Programa{
         System.out.println("  ;;'    ,;;;,;                                     ;;'       ,;;;,;            ");
         System.out.println("         ;;;;;;                                     ,'        ;;;;;;            ");
         System.out.println("         `;;;;'                                               `;;;;'            ");
-        
-        AnsiConsole.systemInstall();
+
+		AnsiConsole.systemInstall();
     	Audio audio = new Audio();
         Random randomGenerator = new Random ();
     	int centinela = 0;
@@ -88,7 +89,7 @@ public class Programa{
 		Random rand = new Random();
 		int randomcancion;
         int randomInt= randomGenerator.nextInt (300) + 1;
-    	String [] canciones = ConsoleFile.read ("recursos/letras.csv");
+    	String [] canciones = ConsoleFile.readBigFile ("recursos/letras.csv");
     	String [][] info_canciones = ConsoleData.dataList(canciones);
         StringBuilder letra_cancion;
         //for (int f=0;f<info_canciones.length;f++) {
@@ -98,7 +99,7 @@ public class Programa{
         //    System.out.println(" ");
         //}
         
-        System.out.println(info_canciones.length);
+        //System.out.println(info_canciones.length);
         System.out.println("¡Hola! Bienvenido a GuessTheSong, estas son las opciones de juego:");
         System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre");
         System.out.println("2. Detener cancion");
@@ -110,10 +111,12 @@ public class Programa{
 
     	if (centinela ==1)
     	{ 
-            randomcancion = rand.nextInt(13)+1;
+            randomcancion = rand.nextInt(18)+1;
 			System.out.println("El numero aleatorio es:" + randomcancion);
             audio.seleccionarCancion(info_canciones[randomcancion][ConsoleData.RUTA_CANCION]);
-    		audio.reproducir();	
+            audio.reproducir();
+            audio.fragmentoAleatorio();
+            
     	}
         if(centinela == 3)
                 {
