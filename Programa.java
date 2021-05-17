@@ -62,10 +62,14 @@ public class Programa{
     }
 
 	public static void main(String[] args) {
-		System.out.println("  ___ _  _ ____ ____ ____ ____ _  _ ____ ____  __  __ _  ___   ");
-		System.out.println(" / __) )( (  __) ___) ___|_  _) )( (  __) ___)/  \\(  ( \\/ __) ");
-		System.out.println("( (_ ) \\/ () _)\\___ \\___ \\ )( ) __ () _)\\___ (  O )    ( (_ \\ ");
-		System.out.println(" \\___|____(____|____(____/(__)\\_)(_(____|____/\\__/\\_)__)\\___/ " );
+		
+        System.out.println("                                                                                ");
+        System.out.println("             .-.     .-.     .-.     .-.     .-.     .-.     .-.                ");                                
+        System.out.println("        `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'           ");
+        System.out.println("          ___ _  _ ____ ____ ____ ____ _  _ ____ ____  __  __ _  ___            ");
+		System.out.println("         / __) )( (  __) ___) ___|_  _) )( (  __) ___)/  \\(  ( \\/ __)         ");
+		System.out.println("        ( (_ ) \\/ () _)\\___ \\___ \\ )( ) __ () _)\\___ (  O )    ( (_ \\     ");
+		System.out.println("         \\___|____(____|____(____/(__)\\_)(_(____|____/\\__/\\_)__)\\___/      ");
 
         System.out.println("  ,           ;            ======o     o======      ,              ;            ");
         System.out.println("  ;;          ;;               ___________          ;;             ;;           ");
@@ -79,8 +83,13 @@ public class Programa{
         System.out.println("  ;;'    ,;;;,;                                     ;;'       ,;;;,;            ");
         System.out.println("         ;;;;;;                                     ,'        ;;;;;;            ");
         System.out.println("         `;;;;'                                               `;;;;'            ");
-
-		AnsiConsole.systemInstall();
+        System.out.println("                                                                                ");
+        System.out.println("             .-.     .-.     .-.     .-.     .-.     .-.     .-.                ");                                
+        System.out.println("        `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'           ");
+		
+        
+        
+        AnsiConsole.systemInstall();
     	Audio audio = new Audio();
         Random randomGenerator = new Random ();
     	int centinela = 0;
@@ -100,6 +109,8 @@ public class Programa{
         //}
         
         //System.out.println(info_canciones.length);
+        System.out.println("");
+        System.out.println("                                                                  ");
         System.out.println("¡Hola! Bienvenido a GuessTheSong, estas son las opciones de juego:");
         System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre");
         System.out.println("2. Detener cancion");
