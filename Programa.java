@@ -144,7 +144,8 @@ public class Programa{
                 }
 
 
-
+        System.out.println("");
+        System.out.println("");
         System.out.println("¡Hola! Bienvenido a GuessTheSong, estas son las opciones de juego:");
         System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre");
         System.out.println("2. Detener cancion");
