@@ -128,28 +128,12 @@ public class Programa{
             audio.seleccionarCancion(info_canciones[randomcancion][ConsoleData.RUTA_CANCION]);
             audio.reproducir();
             audio.fragmentoAleatorio();
+            System.out.println("Esta sonando " + info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]);
             System.out.print("Ingrese el nombre de la cancion  ");
             nombrecancion = ConsoleInput.getString();
-            System.out.println(info_canciones[1][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[2][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[3][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[4][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[5][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[6][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[7][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[8][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[9][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[10][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[11][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[12][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[13][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[14][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[15][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[16][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[17][ConsoleData.NOMBRE_CANCION]);
-            System.out.println(info_canciones[18][ConsoleData.NOMBRE_CANCION]);
-           
-        if(nombrecancion.toLowerCase().equals(info_canciones[0][ConsoleData.NOMBRE_CANCION].toLowerCase())){
+            String a = "hola";
+            String b = "hola";
+        if(a.equals(b)){
             System.out.println( "felicidades");
         }else{
             System.out.println( "fallaste");
