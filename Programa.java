@@ -134,7 +134,7 @@ public class Programa{
             System.out.print("Ingrese el nombre de la cancion  ");
             nombrecancion = ConsoleInput.getString();
             
-        if((info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]).equals(nombrecancion)){
+        if (nombrecancion.equals(info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION])){
             System.out.println( "felicidades, ¡Adivinaste! ");
         }else if (nombrecancion.equals("no se")){
            mostrarLetra(randomcancion,info_canciones);
