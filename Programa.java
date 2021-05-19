@@ -131,12 +131,11 @@ public class Programa{
             System.out.println("Esta sonando " + info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]);
             System.out.print("Ingrese el nombre de la cancion  ");
             nombrecancion = ConsoleInput.getString();
-            String a = "hola";
-            String b = "hola";
-        if(a.equals(b)){
-            System.out.println( "felicidades");
+            
+        if((info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]).equals(nombrecancion)){
+            System.out.println( "felicidades, ¡Adivinaste! ");
         }else{
-            System.out.println( "fallaste");
+            System.out.println( "intenta de nuevo");
         }
             
     	}
