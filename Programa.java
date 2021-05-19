@@ -114,10 +114,12 @@ public class Programa{
         System.out.println("                                                                  ");
         System.out.println("¡Hola! Bienvenido a GuessTheSong, estas son las opciones de juego:");
         System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre");
+        System.out.println("En caso de que no reconozcas la cancion, escribe 'no se' el programa te dara una pista y podras intentar de nuevo" );
         System.out.println("2. Detener cancion");
-        System.out.println("3. En caso de apoyo, presione 3 para ver un fragmento de la letra, en caso de adivinar la canción ingrese su nombre");
-        System.out.println("3. Imprima las letras de las canciones");
         System.out.println("4. Salir del juego");
+        System.out.println("                  ");
+        System.out.println("                  ");
+        System.out.println("                  ");
         centinela = ConsoleInput.getInt();
 	do {
         
@@ -134,35 +136,50 @@ public class Programa{
             
         if((info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]).equals(nombrecancion)){
             System.out.println( "felicidades, ¡Adivinaste! ");
+        }else if (nombrecancion.equals("no se")){
+           mostrarLetra(randomcancion,info_canciones);
+           System.out.println("\n\n¿Ya sabes cual es la cancion? Escribe el nombre de la canción");
+           nombrecancion = ConsoleInput.getString();
+           if((info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]).equals(nombrecancion)){
+            System.out.println( "felicidades, ¡Adivinaste! ");
         }else{
             System.out.println( "intenta de nuevo");
         }
+        }else{
+        	 System.out.println( "intenta de nuevo");
+        }
+        
             
     	}
-        if(centinela == 3)
-                {
-                    imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
-                    indice_cancion = ConsoleInput.getInt();
-
-                    inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-                    fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-                    
-                    letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-
-                    imprimir(letra_cancion.toString().replace(";"," ").substring(0, randomInt));
-                }
+        
 
 
         System.out.println("");
         System.out.println("");
         System.out.println("¡Hola! Bienvenido a GuessTheSong, estas son las opciones de juego:");
         System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre");
+        System.out.println("En caso de que no reconozcas la cancion, escribe 'no se' el programa te dara una pista y podras intentar de nuevo" );
         System.out.println("2. Detener cancion");
-        System.out.println("3. En caso de apoyo, presione 3 para ver un fragmento de la letra, en caso de adivinar la canción ingrese su nombre");
-        System.out.println("3. Imprima las letras de las canciones");
         System.out.println("4. Salir del juego");
+        System.out.println("                  ");
+        System.out.println("                  ");
+        System.out.println("                  ");
+        
         centinela = ConsoleInput.getInt();		
     }while(centinela!=4);
+}
+public static void mostrarLetra(int randomcancion,String [][] info_canciones){
+    int inicio_letra= 0, fin_letra = 0;
+    StringBuilder letra_cancion;
+    Random randomGenerator = new Random ();
+    int randomInt= randomGenerator.nextInt (300) + 1;
+    String [] canciones = ConsoleFile.readBigFile ("recursos/letras.csv");
+    inicio_letra = ConsoleInput.stringToInt(info_canciones[randomcancion][ConsoleData.INICIO_CANCION]);
+    fin_letra = ConsoleInput.stringToInt(info_canciones[randomcancion][ConsoleData.FIN_CANCION]);
+    
+    letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+
+    imprimir(letra_cancion.toString().replace(";"," ").substring(0, randomInt));
 }
 }
