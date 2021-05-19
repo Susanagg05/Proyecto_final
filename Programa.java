@@ -126,7 +126,7 @@ public class Programa{
     	if (centinela ==1)
     	{ 
             randomcancion = rand.nextInt(18)+1;
-			System.out.println("El numero aleatorio es:" + randomcancion);
+			
             audio.seleccionarCancion(info_canciones[randomcancion][ConsoleData.RUTA_CANCION]);
             audio.reproducir();
             audio.fragmentoAleatorio();
@@ -165,7 +165,8 @@ public class Programa{
         System.out.println("                  ");
         System.out.println("                  ");
         
-        centinela = ConsoleInput.getInt();		
+        centinela = ConsoleInput.getInt();	
+        audio.detener();	
     }while(centinela!=4);
 }
 public static void mostrarLetra(int randomcancion,String [][] info_canciones){
