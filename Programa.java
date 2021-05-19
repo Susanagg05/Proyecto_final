@@ -128,9 +128,9 @@ public class Programa{
             randomcancion = rand.nextInt(18)+1;
 			
             audio.seleccionarCancion(info_canciones[randomcancion][ConsoleData.RUTA_CANCION]);
-            audio.reproducir();
+            //audio.reproducir();
             audio.fragmentoAleatorio();
-            System.out.println("Esta sonando " + info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]);
+            //System.out.println("Esta sonando " + info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]);
             System.out.print("Ingrese el nombre de la cancion  ");
             nombrecancion = ConsoleInput.getString();
             

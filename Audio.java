@@ -18,8 +18,9 @@ public class Audio extends Thread{
 		sonido = ruta_cancion;
 	}
 
-	public void empezar(int posicion)
+	public void empezar(boolean es_aleatorio)
 	{
+		int posicion = 0;
 		if(!esta_reproduciendose)
 		{
 			try {
@@ -33,8 +34,9 @@ public class Audio extends Thread{
 	            // Create sequence, the File must contain MIDI file data.
 	            Sequence sequence = MidiSystem.getSequence(new File(sonido));
 	            sequencer.setSequence(sequence); // load it into sequencer
-	            if(posicion>0)
+	            if(es_aleatorio)
 	            {
+	            	posicion = RandomHelper.random(0,(int)sequencer.getTickLength());
 	            	sequencer.setTickPosition(posicion);
 	            }
 	            sequencer.start();  // start the playback
@@ -46,7 +48,10 @@ public class Audio extends Thread{
 	            esta_reproduciendose = false;
 	        }
 		}
-		
+		else{
+			System.out.println("Hay un archivo actualmente en reproducci\u00f3n");
+			System.out.println("Detenga la canci\u00f3n y seleccione una nueva");
+		}
 	}
 
 	public void detener(){
@@ -71,12 +76,12 @@ public class Audio extends Thread{
 	}
 
 	public void reproducir(){
-		empezar(0);
+		empezar(false);
 		empezarHilo();
 	}
 
 	public void fragmentoAleatorio(){
-		empezar(RandomHelper.random(0,(int)sequencer.getTickLength()));
+		empezar(true);
 		empezarHilo();
 	}
 
