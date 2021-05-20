@@ -160,7 +160,7 @@ public class Programa{
         System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre");
         System.out.println("En caso de que no reconozcas la cancion, escribe 'no se' el programa te dara una pista y podras intentar de nuevo" );
         System.out.println("2. Presione el numero 4 para detener la cancion");
-        System.out.println("4. Presione enter para alir del juego");
+        System.out.println("4. Presione enter para salir del juego");
         System.out.println("                  ");
         System.out.println("                  ");
         System.out.println("                  ");
