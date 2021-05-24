@@ -103,11 +103,11 @@ public class Programa{
         StringBuilder letra_cancion;
         String nombrecancion;
         //for (int f=0;f<info_canciones.length;f++) {
-        //    for (int i=0;i<8;i++) {
-        //        System.out.print(info_canciones[f][i]+" ");
-        //   }
-        //    System.out.println(" ");
-        //}
+            //for (int i=0;i<8;i++) {
+                //System.out.print(info_canciones[f][i]+" ");
+           //}
+           // System.out.println(" ");
+       // }
         
         //System.out.println(info_canciones.length);
         System.out.println("");
@@ -134,18 +134,26 @@ public class Programa{
             System.out.print("Ingrese el nombre de la cancion  ");
             nombrecancion = ConsoleInput.getString();
             
-        if (nombrecancion.equals(info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION])){
+        if (nombrecancion.equals(info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]))
+        {
             System.out.println( "felicidades, ¡Adivinaste! ");
-        }else if (nombrecancion.equals("no se")){
+        }
+        else if (nombrecancion.equals("no se"))
+        {
            mostrarLetra(randomcancion,info_canciones);
            System.out.println("\n\n¿Ya sabes cual es la cancion? Escribe el nombre de la canción");
            nombrecancion = ConsoleInput.getString();
-           if((info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]).equals(nombrecancion)){
+        if((info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]).equals(nombrecancion))
+        {
             System.out.println( "felicidades, ¡Adivinaste! ");
-        }else{
+        }
+        else
+        {
             System.out.println( "intenta de nuevo");
         }
-        }else{
+        }
+        else
+        {
         	 System.out.println( "intenta de nuevo");
         }
         
